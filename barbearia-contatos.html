@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Barbearia Datior</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da barbearia do Datior"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="barbearia-produtos.html">Produtos</a></li>
+						<li><a href="">Contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id=nomesobrenome" class="input-padrao" required></ins>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="exemploemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" placeholder="mensagem"></textarea>
+
+				<fieldset>
+					<legend>Como prefere nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contatos"  value="email" id="radio-email"> Email</label>
+
+					<label for="radio-telefone"> <input type="radio" name="contatos" value="email" id="radio-telefone"> Telefone</label>
+
+					<label for="radio-whatsapp"> <input type="radio" name="contatos" value="Whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+				</fieldset>
+
+				<fildeset>
+					<legend>Qual horário deseja ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fildeset>
+
+				<label><input type="checkbox" name="contatos" class="checkbox" checked> Deseja receber atualizações por email?</label>
+
+				<input type="submit" value="enviar formulario" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8:00 - 20:00</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8:00 - 20:00</td>
+					</tr>
+					<tr>
+						<td>Quinta</td>
+						<td>8:00 - 20:00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2"> TESTE </td>
+					</tr>
+				</tfoot>
+			</table>
+
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da barbearia do Datior">
+			<p>&#169; Barbearia do Datior</p>
+		</footer>
+	</body>
+</html>

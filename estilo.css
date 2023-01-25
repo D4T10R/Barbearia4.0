@@ -1,0 +1,181 @@
+header {
+	background: #BBBBBB;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+
+}
+
+
+nav a{
+	color: #000000;
+	text-transform: uppercase; 
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none; /* tira a decoracao */
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;  /* tamanho fixo da lista */
+	margin: 0 auto; /* centraliza o conteudo */
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block; /* faz o conteudo virar um bloco na mesma linha */
+	text-align: center; /* centraliza o texto no mesmo conteudo */ 
+	width: 30%; /* largura 30% */
+	vertical-align: top; /* ponto centraliza os blocos no topo */ 
+	margin: 0 1.4%; /* espaçamento externo 0 para cima e para baixo, 1% para os lados */
+	padding: 30px 20px; /* espacamento interno 30 para cima e baixo, 20 para os lados */
+	box-sizing: border-box; /* faz o bloco ficar com o tamanho fixo do width passado */
+	border: 2px solid #000000; /* faz uma borda passando: TAMANHO, TIPO, COR */
+	border-radius: 10px;
+}
+.produtos h2 {
+	font-size: 20px;
+	font-weight: bold; /* peso da fonte */
+}
+
+.descricao {
+	font-size: 17px;
+}
+
+.preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19
+}
+
+.produtos li:active {
+	border-color: #088C19
+}
+
+.produtos li:hover h2 {
+	font-size: 27px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	color: white;
+	background: url(bg.jpg);
+}
+
+footer p {
+	margin-top: 10px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.input-padrao {
+	display: block;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: orange;
+	border: none;
+	border-radius: 6px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #C78C19;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th{
+	border: 2px solid #000000;
+	padding: 10px 15px;
+}
+
+/* CSS para página inicial */
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.sobre p {
+	margin: 0 0 1em;
+}
+
+.sobre strong {
+	font-weight: bold;
+}
+
+.sobreimagens {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0px;
+}
+
+
+
+.imagembaneficios {
+	width: 60%;
+}
