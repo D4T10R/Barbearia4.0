@@ -94,7 +94,7 @@ footer p {
 	margin-top: 10px;
 }
 
-main {
+.conteudo-contatos {
 	width: 940px;
 	margin: 0 auto;
 }
@@ -138,6 +138,8 @@ form label, form legend {
 }
 
 table {
+	position: relative;
+	left: 20%;
 	margin: 20px 0 40px;
 }
 
@@ -153,7 +155,10 @@ td, th{
 }
 
 /* CSS para página inicial */
-
+.principal {
+	width: 940px;
+	margin: 0 auto;
+}
 .banner {
 	width: 100%;
 }
@@ -161,19 +166,20 @@ td, th{
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
-	margin: 0 0 1em;
+	margin: 1em 0;
 	clear: left;
 }
 
-.sobre p {
+.principal p {
 	margin: 0 0 1em;
 }
 
-.sobre strong {
+.principal strong {
 	font-weight: bold;
 }
 
-.sobreimagens {
+.principal-imagens {
+	background: #FEFEFE;
 	width: 120px;
 	float: left;
 	margin: 0 20px 20px 0px;
@@ -181,11 +187,22 @@ td, th{
 
 .localizacao {
 	padding: 3em 0 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
 }
 
 .localizacao p {
 	text-align: center;
 	margin: 0 0 3em;
+}
+
+.localizacao-map {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.beneficios {
+	background: #888888;
+	padding: 3em 0;
 }
 
 .conteudo-beneficios {
@@ -205,6 +222,10 @@ td, th{
 	line-height: 1.5em;	
 }
 
+.itens:before {
+	content: "★ "; 
+}
+
 .itens:first-child {
 	font-weight: bold;
 }
@@ -215,5 +236,4 @@ td, th{
 
 .video-beneficios {
 	text-align: center;
-	margin: 2em auto;
 }
