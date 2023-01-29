@@ -2,8 +2,9 @@ body {
 	font-family: 'Oswald', sans-serif;
 }
 
-/*   */
+/* cabeçalho  */
 header {
+	border: 2px solid black;
 	background: #BBBBBB;
 }
 
@@ -39,6 +40,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+/* css dos produtos */
 .produtos {
 	width: 940px;  /* tamanho fixo da lista */
 	margin: 0 auto; /* centraliza o conteudo */
@@ -83,6 +85,7 @@ nav a:hover {
 	font-size: 27px;
 }
 
+/* rodapé */
 footer {
 	padding: 20px;
 	text-align: center;
@@ -99,6 +102,8 @@ footer p {
 	margin: 0 auto;
 }
 
+
+/* CSS dos contatos */
 form {
 	margin: 40px 0;
 }
@@ -107,6 +112,10 @@ form label, form legend {
 	display: block;
 	font-size: 20px;
 	margin: 10px 0;
+}
+
+form label:first-child {  /* apenas para o primeiro label */
+	margin-top: 15px;
 }
 
 .input-padrao {
@@ -180,13 +189,14 @@ td, th{
 
 .principal-imagens {
 	background: #FEFEFE;
-	width: 120px;
+	width: calc(15% - 50px);
 	float: left;
 	margin: 0 20px 20px 0px;
+	box-shadow: 2px 2px 4px black;
 }
 
 .localizacao {
-	padding: 3em 0 3em 0;
+	padding: 3em 0 3em 0
 	background: linear-gradient(#FEFEFE, #888888);
 }
 
@@ -198,6 +208,8 @@ td, th{
 .localizacao-map {
 	width: 940px;
 	margin: 0 auto;
+	border: 3px solid black;
+	box-shadow: 3px 3px 5px black;
 }
 
 .beneficios {
@@ -232,8 +244,64 @@ td, th{
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px #222222;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.5;
+
+	
 }
 
 .video-beneficios {
-	text-align: center;
+	width: 560px;
+	height: 315px;
+	margin: 0 auto;
+	border: 3px solid black;
+}
+
+/* css para celular */
+
+@media screen and (max-width: 480px) {
+
+	/* aptando a tela inicial */	
+
+	.caixa, .principal, .localizacao-map, .conteudo-beneficios, .video-beneficios{
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+		margin: 1em auto;
+	}
+
+	nav a {
+		font-size: 1em;
+	}	
+
+	.principal p {
+		margin: 1em 1em;
+	}
+
+	.beneficios h3 {
+		margin: 0.1em auto;
+	}
+
+	.conteudo-beneficios .itens, .conteudo-beneficios .lista-beneficios, .imagem-beneficios {
+		width: 100%;
+		margin: 1em auto;
+	}
+
+	.video-beneficios {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 }
